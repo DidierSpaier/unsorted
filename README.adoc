@@ -1,0 +1,18 @@
+== README
+
+This repository gathers files that could be of use to some.
+
+[[checkfb.c]]checkfb.c::
++
+This program tests the usability of a linux frame buffer and indicates the screen size in pixels and the density in bits per pixel.
++
+It comes handy for instance to programmatically adapt a font size (argument of the -s option) in a `fbterm` command to a given screen, so
+that the size of a displayed text on this screen fills the screen while respecting a minimum number of rows and columns.
++
+This allows for instance to maximise the font size while respecting the text's layout to help readers with a low vision.
++
+Compile it for instance with this command:
++
+----
+gcc checkfb.c -o checkfb
+----
